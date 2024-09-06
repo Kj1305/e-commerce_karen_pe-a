@@ -173,3 +173,6 @@ body {
     background-color: #45a049;
     color: white;
   }
+  .card-img-ofertas {
+  height:120px; width:180px;
+  }
