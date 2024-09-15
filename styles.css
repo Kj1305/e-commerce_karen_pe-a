@@ -1,8 +1,41 @@
-<!-- clase_8 --
+/* Cambiar el fondo de la navbar */
+.navbar {
+  background-color: #1102dd; 
+  border-bottom: 2px solid #153acf; 
+  font-size: 38px; 
+
+}
+
+
+.navbar-nav .nav-link {
+  color: rgb(33, 29, 226); 
+  font-size: 38px; 
+  transition: background-color 0.3s ease-in-out; /* Animación suave */
+}
+
+/* Cambiar el color cuando se pasa el mouse */
+.navbar-nav .nav-link:hover {
+  background-color: #1d99e1; /* Cambiar el fondo al pasar el mouse */
+  color: #fff; /* Cambiar el color del texto */
+}
+
+/* Personalizar el botón de búsqueda */
+.btn-outline-success {
+  color: #fff;
+  background-color: #4713f0;
+  border-color: #f2fdf4;
+}
+
+.btn-outline-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* clase_8 */
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #cedbe1;
+  background-color: #10abf4;
   color: #5376f5;
 }
 
@@ -14,24 +47,24 @@ h1 {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 20px;
-  width: 900px;
-  height: 900px;
-  gap :10px;
+  margin: 10px;
+ /* width: 2000px;
+  height: 2000px;*/
+  gap :15px;
 }
 
 .card {
-  flex: 1 1 calc(33% - 20px); /* Las tarjetas ocupan aproximadamente 33% del ancho del contenedor menos el espacio */
-  max-width: 250px; /* Tamaño máximo de la tarjeta */
+  flex-basis: calc(40.4% - 40px); 
+  max-width: 300px;
   margin: 10px;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   background-color: #f5f5f5;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Incluye el padding y border en el ancho total */
+  box-sizing: border-box; 
 }
 
 .card:hover {
@@ -49,9 +82,10 @@ h1 {
 img:hover {
   transform: scale(1.09);
 }
+
 @media (max-width: 768px) {
   .card {
-      flex: 1 1 calc(50% - 20px); 
+      flex: 1 1 calc(80% - 20px); 
   }
 }
 
@@ -60,6 +94,7 @@ img:hover {
       flex: 1 1 100%; 
   }
 }
+
 button {
   background-color: #18579a;
   color: white;
@@ -74,6 +109,7 @@ button:hover {
   background-color: #59bae0;
   color :black;
 }
+
 
 
   
